@@ -84,27 +84,45 @@ body{
 }
 .principal{
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 .titulo-pagina{
     font-size: 1.5rem;
     font-weight: 700;
+}
+.titulo-secao{
+    font-size: 18px;
+    font-weight: 700;
+    }
+.secao{
+    display: grid;
+    gap:16px;
 }
 .cartao{
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
     background-color:#2C343A;
+    gap:16px;
 }
 .cartao__destaque{
-    grid-column: span 2;
+    margin-bottom: 16px;
 }
 .cartao__conteudo{
     padding: 16px;
     display: grid;
-    gap: 8px;
+    gap: 16px;
     grid-template-columns: auto 1fr;
 }
 .cartao__titulo{
+    font-size: 1.2rem;
+    grid-column: span 2;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-bottom: 16px;
+}
+.cartao__titulo-destaque{
     font-size: 1.2rem;
     grid-column: span 2;
     font-weight: 700;
@@ -124,8 +142,20 @@ body{
     content:"\e90c";
     margin-right: 8px;
 }
+.cartao__info--vendas::before{
+    content:"\e905";
+    margin-right: 8px;
+}
+.cartao__info--preco::before{
+    content:"\e905";
+    margin-right: 8px;}
+
 .cartao__info--visualizacao::before{
     content:"\e90f";
+    margin-right: 8px;
+}
+.cartao__info--perfil::before{
+    content: url("assets/img/profile_2.png");
     margin-right: 8px;
 }
 .cartao__botao{
@@ -137,10 +167,18 @@ body{
     height: 40px;
     border-radius: 10px;
     font-size: 0,9rem;
+    justify-self: flex-end;
 }
 .cartao__botao--play::before{
     content:"\e90b";
     font-size: 24px;
+}
+.cartao__botao--vendas::before{
+    content:"\e901";
+    font-size: 24px;
+}
+.cartao__botao--pico::before{
+    content:"\e908";
 }
 .cartao__botao--destaque{
     width: 100%;
@@ -149,3 +187,49 @@ body{
 .cartao__botao--destaque::before{
     margin-right:8px;
 }
+.cartao__mapa{
+    width: 985px;
+    height: 586px;
+}
+.imagem__artigo-destaque{
+    width: 120%;
+    height: auto;
+    grid-column: span 2;
+    justify-self: center;
+    overflow:visible;
+
+}
+.artigo__gap{
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: auto 1fr;
+}
+.artigo__titulo{
+    font-size: 1.2rem;
+    grid-column: span 2;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-bottom: 16px; 
+}
+.artigo__perfil{
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
+.artigo__vizualizacao{
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    justify-self: flex-end;
+}
+.artigo__texto{
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    grid-column: span 2;
+    line-height: 1.8;
+}
+.artigo__imagem{
+    width: 100%;
+    height: auto;
+    grid-column: span 2;
+    justify-self: center;
+    overflow:hidden;}
