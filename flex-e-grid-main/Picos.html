@@ -19,26 +19,58 @@
         <button class="cabecario__notificacao" aria-label="Notificação"><i></i></button>
     </header>
     <nav class="menu-lateral">
-        <a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Inicio</a>
+        <a href="index.html" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Inicio</a>
         <a href="index.html" class="menu-lateral__link menu-lateral__link--videos">Vídeos</a>
         <a href="Picos.html" class="menu-lateral__link menu-lateral__link--picos">Picos</a>
         <a href="artigo.html" class="menu-lateral__link menu-lateral__link--integrantes">Integrantes</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
     </nav>
-    <main class="principal principal__area">         
-        <h2 class="titulo-pagina">Picos</h2>
-        <article class="cartao cartao__destaque">
+    <main class="principal principal__area_picos">         
+        <h2 class="titulo-pagina titulo-picos">Picos</h2>
+        <article class="cartao cartao__destaque destaque-picos">
             <img src="assets/img/mapa-picos.png" alt="Banner do cartão" class="cartao__imagem cartao__mapa"> 
         </article>
-        <section class="secao">
+        <article class="cartao cartao-videos-recentes video_recente">
+            <h3 class="cartao__titulo">Videos Recentes</h3>
+            <a href="#" class="cartao__link">Ver todos</a>
+            <ul class="cartao__lista">
+                <li class="cartao__item">
+                <img src="assets/img/miniatura_1.png" alt="thumbnail" class="cartao__item-thumbnail">
+                <h4 class="cartao__item-titulo">HCZ - Love machine</h4>
+                <p class="cartao__item-perfil">Julia Fonseca</p>
+                </li>
+                <li class="cartao__item">
+                <img src="assets/img/miniatura_2.png" alt="thumbnail" class="cartao__item-thumbnail">
+                <h4 class="cartao__item-titulo">HZC - Pescaria na Urca</h4>
+                <p class="cartao__item-perfil">Julia Fonseca</p>
+                </li>
+                <li class="cartao__item">
+                <img src="assets/img/miniatura_3.png" alt="thumbnail" class="cartao__item-thumbnail">
+                <h4 class="cartao__item-titulo">HCZ - Love machine</h4>
+                <p class="cartao__item-perfil">Julia Fonseca</p>
+                </li>
+                <li class="cartao__item">
+                <img src="assets/img/miniatura_4.png" alt="thumbnail" class="cartao__item-thumbnail">
+                <h4 class="cartao__item-titulo">Vidalocagi - Guerreiros do Asfalto</h4>
+                <p class="cartao__item-perfil">Julia Fonseca</p>
+                </li>
+                <li class="cartao__item">
+                <img src="assets/img/miniatura_5.png" alt="thumbnail" class="cartao__item-thumbnail">
+                <h4 class="cartao__item-titulo">Vidalocagi - Não importa o nível</h4>
+                <p class="cartao__item-perfil">Julia Fonseca</p>
+                </li>
+                
+            </ul>
+        </article>
+        <section class="secao secao-videos">
            <h3 class="titulo-secao">Vídeos mais vistos</h3> 
            <article class="cartao">
                 <img src="assets/img/pico1.png" alt="Vídeo" class="cartao__imagem"> 
                 <div class="cartao__conteudo">
                     <p class="cartao__perfil">Bruno Lopes</p>
                     <h3 class="cartao__titulo">Gap do Itaú da Voluntários da Pátria</h3>
-                    <p class="cartao__info cartao__info--visualizacao">53 visualizações</p>
+                    <p class="cartao__info cartao__info--visualizacao cartao__info--tempo">53 visualizações</p>
                     <button class="cartao__botao cartao__botao--pico" aria-label="Assistir agora"></button>
                 </div>
             </article>
@@ -47,7 +79,7 @@
                 <div class="cartao__conteudo">
                     <p class="cartao__perfil">Luiza Sampaio</p>
                     <h3 class="cartao__titulo">Gap com mureta da Voluntários</h3>
-                    <p class="cartao__info cartao__info--visualizacao">53 visualizações</p>
+                    <p class="cartao__info cartao__info--visualizacao cartao__info--tempo">53 visualizações</p>
                     <button class="cartao__botao cartao__botao--pico" aria-label="Assistir agora"></button>
                 </div>
             </article>
@@ -56,7 +88,7 @@
                 <div class="cartao__conteudo">
                     <p class="cartao__perfil">André Soares</p>
                     <h3 class="cartao__titulo">Rampa da entrada do túnel Rebouças</h3>
-                    <p class="cartao__info cartao__info--visualizacao">53 visualizações</p>
+                    <p class="cartao__info cartao__info--visualizacao cartao__info--tempo">53 visualizações</p>
                     <button class="cartao__botao cartao__botao--pico" aria-label="Assistir agora"></button>
                 </div>
             </article>
@@ -65,7 +97,7 @@
                 <div class="cartao__conteudo">
                     <p class="cartao__perfil">Júlia Fonseca</p>
                     <h3 class="cartao__titulo">Wallride de pedra portuguesa da FGP</h3>
-                    <p class="cartao__info cartao__info--visualizacao">53 visualizações</p>
+                    <p class="cartao__info cartao__info--visualizacao cartao__info--tempo">53 visualizações</p>
                     <button class="cartao__botao cartao__botao--pico" aria-label="Assistir agora"></button>
                 </div>
             </article>

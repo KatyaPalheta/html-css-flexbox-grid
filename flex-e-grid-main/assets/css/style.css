@@ -59,7 +59,7 @@ body{
     position: absolute;
     left: 24px;
 }
-.menu-lateral__link--ativo{
+.menu-lateral__link--ativo:hover{
     color: #FFFFFF;
     padding-left: 56px;
     border-left: 8px solid #FFFFFF;
@@ -90,6 +90,7 @@ body{
     font-size: 1.5rem;
     font-weight: 700;
     grid-area: titulo-pagina;
+    align-self: start;
 }
 .titulo-secao{
     font-size: 18px;
@@ -133,14 +134,14 @@ body{
     display: grid;
     gap: 16px;
     grid-template-columns: auto 1fr;
+
+
 }
 .cartao__titulo{
     font-size: 1.2rem;
-    grid-column: span 2;
     font-weight: 700;
     color: #FFFFFF;
-    padding-bottom: 16px;
-    gri
+    grid-column: span 2;
 }
 .cartao__titulo-destaque{
     font-size: 1.2rem;
@@ -151,6 +152,13 @@ body{
 .cartao__perfil{
     color: #95999C;
     font-size: 0.9rem;
+    grid-column: span 2;
+}
+
+.cartao_video h3{
+    grid-column: span 2;
+}
+.cartao_arte h3{
     grid-column: span 2;
 }
 .cartao__info{
@@ -202,7 +210,7 @@ body{
 }
 .cartao__botao--destaque{
     width: 100%;
-    grid-column: auto;
+    grid-column: 1;
     padding: 16px 8px;
 }
 .cartao__botao--destaque::before{
@@ -271,10 +279,16 @@ body{
 .cartao--recentes{
     display: none;
 }
+.cartao__botao--destaque{
+    grid-column: span 2;
+}
 @media screen and (min-width:980px){
     body{
         display:grid;
         grid-template-columns: auto 1fr;
+    }
+    .cartao__botao--destaque{
+        grid-column: 1;
     }
     .cabecario{
         background-color: #1D232A;
@@ -338,8 +352,30 @@ body{
         grid-column: 2;
         gap: 30px;
     }
+    .principal__area_picos{
+        column-gap: 32px;
+        padding: 16px 60px;
+        grid-column: 2 / span 1;
+        gap: 30px;
+        grid-template-areas:
+        "titulo-picos titulo-picos titulo-picos"
+        "destaque-picos destaque-picos video_recente"
+        "secao-videos secao-videos secao-videos";}
+
+    .titulo-picos{
+        grid-area: titulo-picos;
+    }
+    .destaque-picos{
+        grid-area: destaque-picos;
+    }
+    .destaque-picos{
+        align-items: stretch;
+    }
     .titulo-secao{
         grid-column: span 4;
+    }
+    .secao-videos{
+        grid-area: secao-videos;
     }
     .cartao__imagem-mobile{
         display: none;
@@ -355,10 +391,10 @@ body{
     }
     .cartao-videos-recentes, .cartao-artes-recentes{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto 1fr;
         align-items: center;
         row-gap: 24px;
-        width: 256px;
+        width: auto;
         padding: 16px;
         box-sizing: border-box;
         align-self: flex-start;
@@ -368,7 +404,7 @@ body{
         grid-template-columns: auto auto;
         align-items: center;
         row-gap: 24px;
-        width: 256px;
+        width: auto;
         padding: 16px;
         box-sizing: border-box;
         grid-area: artes-recentes;}
