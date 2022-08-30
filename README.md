@@ -25,8 +25,8 @@ Os usuários devem ser capazes de:
 
 ### Captura de tela
 
-![Resultado final](/flex-e-grid-main/assets/img/desktop.png)
-![Resultado final](/flex-e-grid-main/assets/img/mobile.png)
+![Resultado final](/assets/img/desktop.png)
+![Resultado final](/assets/img/mobile.png)
 
 ### Links
 
